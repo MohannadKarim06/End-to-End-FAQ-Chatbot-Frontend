@@ -7,8 +7,8 @@ import {
   useToast, useColorMode, useColorModeValue
 } from "@chakra-ui/react";
 
-const apiUrl = import.meta.env.VITE_UPLOAD_API_URL;
-const apiUrl = import.meta.env.VITE_CHAT_API_URL;
+const chatURL = import.meta.env.VITE_CHAT_API_URL;
+const uploadURL = import.meta.env.VITE_UPLOAD_API_URL;
 
 function App() {
   const [messages, setMessages] = useState([]);
