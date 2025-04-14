@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Papa from "papaparse";
+import os;
 import {
   Box, Button, Container, Flex, Input, Select, Text, VStack,
   useToast, useColorMode, useColorModeValue
 } from "@chakra-ui/react";
 
-const chatURL = "https://your-api-url.com/chat";
-const uploadURL = "https://your-api-url.com/upload";
+const apiUrl = import.meta.env.VITE_UPLOAD_API_URL;
+const apiUrl = import.meta.env.VITE_CHAT_API_URL;
 
 function App() {
   const [messages, setMessages] = useState([]);
