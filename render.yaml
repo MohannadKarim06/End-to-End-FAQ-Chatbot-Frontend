@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: faq-chatbot-ui
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    repo: https://github.com/yourusername/FAQ-chatbot
+    branch: main
+    rootDir: ui
