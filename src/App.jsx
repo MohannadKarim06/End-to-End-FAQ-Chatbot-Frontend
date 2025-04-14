@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Papa from "papaparse";
-import os;
 import {
   Box, Button, Container, Flex, Input, Select, Text, VStack,
   useToast, useColorMode, useColorModeValue
