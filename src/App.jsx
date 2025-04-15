@@ -34,8 +34,6 @@ function App() {
         faq_source: faqSource,
       });
 
-      });
-
       const botReply = {
         role: "assistant",
         content: res.data?.response || "Sorry, I couldn't understand that.",
