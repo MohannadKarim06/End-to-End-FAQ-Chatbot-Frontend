@@ -30,8 +30,10 @@ function App() {
 
     try {
       const res = await axios.post(chatURL, {
-        message: input,
+        user_input: input,
         faq_source: faqSource,
+      });
+
       });
 
       const botReply = {
