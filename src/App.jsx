@@ -160,8 +160,8 @@ function App() {
       )}
 
       {faqSource === "uploaded" && sampleFAQs.length === 0 && (
-        <Box mt={4} p={3} bg="yellow.100" border="1px solid #ddd" borderRadius="md">
-          <Text>📂 Please upload a CSV to view uploaded FAQs.</Text>
+        <Box mt={4} p={3} bg="orange.200" color="gray.900" borderRadius="md">
+          <Text fontWeight="medium">📂 Please upload a CSV to view uploaded FAQs.</Text>
         </Box>
       )}
 
